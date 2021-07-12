@@ -1,0 +1,24 @@
+﻿# Tiled2Unity generated file. Do not modify by hand.
+# Wavefront file for 'SmallShed_mesh_0003.obj'
+
+# Vertices (Count = 4)
+v -64 -64 0
+v -80 -64 0
+v -80 -48 0
+v -64 -48 0
+
+# Texture cooridinates (Count = 4)
+vt 0.875 0
+vt 1 0
+vt 1 0.25
+vt 0.875 0.25
+
+# Normal
+vn 0 0 -1
+
+# Mesh description
+g SmallShed_mesh_0003
+
+# Faces
+f 1/1/1 2/2/1 3/3/1 4/4/1
+

@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 8858644642532781406}
   - component: {fileID: 8858644642532781401}
   m_Layer: 0
-  m_Name: part
+  m_Name: Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   controller: {fileID: 8858644642700972647}
   speed: 12
-  gravity: -10
+  gravity: -14
   jumpHeight: 2
   groundCheck: {fileID: 8858644643688706085}
   groundDistance: 0.4
@@ -263,7 +263,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8858644643688706085}
   m_Layer: 0
-  m_Name: w
+  m_Name: GroundChecker
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0

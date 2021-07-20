@@ -5,8 +5,11 @@ using UnityEngine;
 public class PlayerLocoMotion : MonoBehaviour
 {
     Vector3 movedirection;
+
+    public GameObject Fppcam;
+    public GameObject Tppcam;
     Transform cam;
-    //Rigidbody rb;
+    Rigidbody rb;
     CharacterController character;
 
     public float movementspeed = 7;
@@ -20,9 +23,26 @@ public class PlayerLocoMotion : MonoBehaviour
         {
             instance = this;
         }
-        //rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody>();
         cam = Camera.main.transform;
         character = GetComponent<CharacterController>();
+    }
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
+
+    private void Update()
+    {
+        if (Fppcam.activeInHierarchy)
+        {
+            cam = Fppcam.transform;
+        }
+        else
+        {
+            cam = Tppcam.transform;
+        }
     }
 
     public void HandleAllMovement()

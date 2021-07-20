@@ -10,10 +10,16 @@ public class camswitcher : MonoBehaviour
     public GameObject TPPcam;
     public GameObject TppCM;
 
-    private bool tpp = false;
+    public bool tpp = false;
+
+    public static camswitcher instance;
 
     private void Awake()
     {
+        if (instance == null)
+        {
+            instance = this;
+        }
         FPPcam.SetActive(true);
         FppCM.SetActive(true);
         TPPcam.SetActive(false);

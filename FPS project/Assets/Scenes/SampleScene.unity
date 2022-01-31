@@ -16732,10 +16732,8 @@ MonoBehaviour:
   m_Mesh: {fileID: 2011695186}
   m_IsSelectable: 1
   m_SelectedFaces: 
-  m_SelectedEdges:
-  - a: 321
-    b: 319
-  m_SelectedVertices: 410100003f010000
+  m_SelectedEdges: []
+  m_SelectedVertices: 
 --- !u!1 &1915817989
 GameObject:
   m_ObjectHideFlags: 0
@@ -17774,6 +17772,7 @@ MonoBehaviour:
   gravity: -9.8
   rotationspeed: 15
   animationbledspeed: 6
+  Jumpspeed: 6
 --- !u!1001 &3047716174995577777
 PrefabInstance:
   m_ObjectHideFlags: 0
